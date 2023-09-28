@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"timer22\startup_stm32f103xb.o"
+"timer22\main.o"
+"timer22\gpio.o"
+"timer22\tim.o"
+"timer22\stm32f1xx_it.o"
+"timer22\stm32f1xx_hal_msp.o"
+"timer22\stm32f1xx_hal_gpio_ex.o"
+"timer22\stm32f1xx_hal_tim.o"
+"timer22\stm32f1xx_hal_tim_ex.o"
+"timer22\stm32f1xx_hal.o"
+"timer22\stm32f1xx_hal_rcc.o"
+"timer22\stm32f1xx_hal_rcc_ex.o"
+"timer22\stm32f1xx_hal_gpio.o"
+"timer22\stm32f1xx_hal_dma.o"
+"timer22\stm32f1xx_hal_cortex.o"
+"timer22\stm32f1xx_hal_pwr.o"
+"timer22\stm32f1xx_hal_flash.o"
+"timer22\stm32f1xx_hal_flash_ex.o"
+"timer22\stm32f1xx_hal_exti.o"
+"timer22\system_stm32f1xx.o"
+--strict --scatter "TIMER22\TIMER22.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIMER22.map" -o TIMER22\TIMER22.axf
